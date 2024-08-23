@@ -1,15 +1,12 @@
-numbers = [1, 4, 0, 6, 8, 0, 2]
+import random
 
-num = numbers.count(0)
-
-i = 0
-while i < num:
-        numbers.remove(0)
-        # print(numbers)
-        i += 1
-i = 0
-while i < num:
-        numbers.append(0)
-        # print(numbers)
-        i += 1
-print(numbers)
+NUMS_SIZE = random.randint(3,10)
+numbers = []
+# print(NUMS_SIZE)
+#
+for i in range(NUMS_SIZE):
+    numbers.append(random.randint(1, 10))
+#
+print(numbers, 'Результат ->')
+result = [numbers[0], numbers[2], numbers[-2]]
+print(result)
